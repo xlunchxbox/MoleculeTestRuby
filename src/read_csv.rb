@@ -9,7 +9,7 @@ def process_portfolio(filename)
   trades_list = Hash.new
   CSV.open(filename, 'r', {:headers => true}).each do |row|
     trades_list[row[0].to_i] = [row[1], row[2], row[3], row[4], row[5].to_i, row[6].to_i, process_date(row[7]), 
-      process_date(row[8]), row[9], row[10], row[11], row[12], row[13]]
+      process_date(row[8]), row[9], row[10], row[11], row[12], row[13], (((process_date(row[8]) - process_date(row[7])).to_i / 30) + 1) ]
   end
   trades_list
 end
