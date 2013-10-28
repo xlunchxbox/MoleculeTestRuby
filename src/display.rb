@@ -7,6 +7,7 @@ def display_trade_information(trades)
      "#{trade_details[8]}", "#{trade_details[9]}", "#{trade_details[10]}", "#{trade_details[11]}",
      "#{trade_details[11]}", "#{trade_details[12]}")
   end
+  puts ""
 end
 
 def display_price_curve_information(price_curves)
@@ -17,4 +18,8 @@ end
 
 def display_mtm(id, mtm_value)
   print("MTM Value for Trade #{id}: $#{format("%.2f", mtm_value)}\n")
+end
+
+def display_portfolio_worth(portfolio_worth)
+  print("\nYour entire portfolio worth is: $#{portfolio_worth}\n\n")
 end

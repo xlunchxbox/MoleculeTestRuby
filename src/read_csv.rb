@@ -14,8 +14,6 @@ def process_portfolio(filename)
   trades_list
 end
 
-
-
 def process_price_curve(filename, price_curve_type, month_year_column, settle_price_column)
   price_curves_list = Hash.new
   
