@@ -16,7 +16,6 @@ end
 
 def process_price_curve(filename, price_curve_type, month_year_column, settle_price_column)
   price_curves_list = Hash.new
-  
   CSV.open(filename, 'r', {:headers => true}).each do |row|    
     price_curves_list[process_date(row[month_year_column])] = [price_curve_type, row[settle_price_column].to_f]
   end
