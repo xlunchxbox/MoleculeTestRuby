@@ -31,4 +31,7 @@ Contains the code to start and run through the program and iterate through the t
 
 
 
+*Note*
+Since the trade portfolio has many columns, it is best run in a maximized console window.
+
 
